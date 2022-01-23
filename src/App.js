@@ -2,14 +2,16 @@ import React, { useReducer } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import AppContext from "./contexts/AppContext";
-import CompB from "./components/CompB";
 
-// import BasicReducer from './components/BasicReducer';
-// import B from './components/B';
+import Memo from "./components/Memo";
+
 // import BasicUseEffect from './components/BasicUseEffect';
 // import Basic2 from './components/Basic2';
 // import TimerContainer from './components/TimerContainer';
 // import ApiFetch from './components/ApiFetch';
+// import BasicReducer from './components/BasicReducer';
+// import B from './components/B';
+// import CompB from "./components/CompB";
 
 const initialState = 0;
 const reducer = (currentState, action) => {
@@ -41,8 +43,9 @@ const App = () => {
 					{/* <ApiFetch/> */}
 					{/* <B /> */}
 					{/* <BasicReducer/> */}
-					<div>Count : {count}</div>
-					<CompB />
+					{/* <div>Count : {count}</div> */}
+					{/* <CompB /> */}
+          <Memo/>
 				</header>
 			</div>
 		</AppContext.Provider>
